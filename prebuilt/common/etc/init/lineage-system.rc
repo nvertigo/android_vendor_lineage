@@ -20,6 +20,7 @@ on boot
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
+    seclabel u:r:sudaemon:s0
     oneshot
     disabled
 
